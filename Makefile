@@ -5,7 +5,8 @@ SRC_HEADERS := src
 SRC_FILES := \
 	src/ft_isalpha.c \
 	src/ft_isdigit.c \
-	src/ft_isalnum.c
+	src/ft_isalnum.c \
+	src/ft_isascii.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 UNITY_HEADERS := unity/src
