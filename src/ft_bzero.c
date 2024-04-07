@@ -6,18 +6,13 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/07 15:58:47 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/07 15:59:31 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/07 16:31:52 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_bzero(void *s, unsigned int n)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (i < n)
-	{
-		((char *) s)[i] = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }
