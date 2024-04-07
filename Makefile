@@ -7,7 +7,8 @@ SRC_FILES := \
 	src/ft_isdigit.c \
 	src/ft_isalnum.c \
 	src/ft_isascii.c \
-	src/ft_isprint.c
+	src/ft_isprint.c \
+	src/ft_strlen.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 UNITY_HEADERS := unity/src
