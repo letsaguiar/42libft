@@ -10,7 +10,8 @@ SRC_FILES := \
 	ft_isprint.c \
 	ft_strlen.c \
 	ft_memset.c \
-	ft_bzero.c
+	ft_bzero.c \
+	ft_memcpy.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a

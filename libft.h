@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 08:44:30 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/16 08:50:08 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ unsigned int    ft_strlen(const char *str);
 void            ft_bzero(void *str, unsigned int n);
 
 void            *ft_memset(void *str, int c, unsigned int n);
+
+void            *ft_memcpy(void *dest, const void *src, unsigned int n);
 
 #endif
