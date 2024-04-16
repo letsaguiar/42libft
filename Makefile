@@ -10,6 +10,7 @@ SRC_FILES := \
 	ft_isalnum.c \
 	ft_isascii.c \
 	ft_isprint.c \
+	ft_isspace.c \
 	ft_strlen.c \
 	ft_strlcpy.c \
 	ft_strlcat.c \
@@ -24,7 +25,8 @@ SRC_FILES := \
 	ft_memchr.c \
 	ft_memcmp.c \
 	ft_toupper.c \
-	ft_tolower.c
+	ft_tolower.c \
+	ft_atoi.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
