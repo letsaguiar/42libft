@@ -13,6 +13,7 @@ SRC_FILES := \
 	ft_strlen.c \
 	ft_strlcpy.c \
 	ft_strlcat.c \
+	ft_strchr.c \
 	ft_bzero.c \
 	ft_memset.c \
 	ft_memcpy.c \
