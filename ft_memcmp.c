@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 11:14:34 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 11:37:03 by letsaguiar       ###   ########.fr       */
+/*   Created: 2024/04/16 11:29:27 by letsaguiar        #+#    #+#             */
+/*   Updated: 2024/04/16 11:36:31 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void            *ft_memchr(void *str, int c, unsigned int n)
+int             ft_memcmp(const void *s1, const void *s2, unsigned int n)
 {
     unsigned int    i;
-    unsigned char   cc;
-    unsigned char   *cstr;
+    unsigned char   *cs1;
+    unsigned char   *cs2;
+
     
     i = 0;
-    cc = (unsigned char) c;
-    cstr = (unsigned char *) str;
-    while (i < n && cstr[i] != cc)
+    cs1 = (unsigned char *) s1;
+    cs2 = (unsigned char *) s2;
+    while(i < n)
+    {
+        if (cs1[i] != cs2[i])
+            return (cs1[i] - cs2[i]);
         i++;
-    if (cstr[i] == cc && n > 0)
-        return (&cstr[i]);
-    else
-        return (0);
+    }
+    return (0);
 }
