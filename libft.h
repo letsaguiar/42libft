@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 11:04:04 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/16 11:09:08 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ unsigned int    ft_strlcat(char *dest, const char *src, unsigned int n);
 char            *ft_strchr(const char *str, int c);
 
 char            *ft_strrchr(const char *str, int c);
+
+int             ft_strncmp(const char *s1, const char *s2, unsigned int n);
 
 void            ft_bzero(void *str, unsigned int n);
 
