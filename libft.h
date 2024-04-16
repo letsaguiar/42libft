@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 12:56:32 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/16 15:30:39 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,7 @@ int             ft_toupper(int c);
 int             ft_tolower(int c);
 
 int             ft_atoi(const char *str);
+
+void            *ft_calloc(unsigned int count, unsigned int size);
 
 #endif

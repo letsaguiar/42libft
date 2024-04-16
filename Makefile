@@ -26,7 +26,8 @@ SRC_FILES := \
 	ft_memcmp.c \
 	ft_toupper.c \
 	ft_tolower.c \
-	ft_atoi.c
+	ft_atoi.c \
+	ft_calloc.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
