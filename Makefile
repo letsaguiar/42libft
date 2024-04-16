@@ -3,22 +3,12 @@ CFLAGS := -Wall -Wextra -Werror
 
 SRC_HEADERS := src
 SRC_FILES := \
-	src/ft_isalpha.c \
-	src/ft_isdigit.c \
-	src/ft_isalnum.c \
-	src/ft_isascii.c \
-	src/ft_isprint.c \
-	src/ft_strlen.c \
-	src/ft_bzero.c \
-	src/ft_memset.c \
-	src/ft_memcpy.c \
-	src/ft_memmove.c
+	ft_isalpha.c \
+	ft_isdigit.c \
+	ft_isalnum.c \
+	ft_isascii.c \
+	ft_isprint.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
-
-UNITY_HEADERS := unity/src
-UNITY_FILES := $(wildcard unity/src/*.c)
-TEST_FILES := $(wildcard test/*.c)
-TEST_EXE := $(subst .c,.test,$(TEST_FILES))
 
 TARGET := libft.a
 
@@ -27,17 +17,11 @@ all: $(TARGET)
 $(TARGET): $(OBJ_FILES)
 	ar rv $(TARGET) $(OBJ_FILES)
 
-src/%.o: src/%.c
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-test: $(TEST_EXE)
-
-test/%.test: test/%.c $(TARGET) $(UNITY_FILES)
-	@$(CC) $(CFLAGS) -I$(SRC_HEADERS) -I$(UNITY_HEADERS) $< $(UNITY_FILES) -o $@ -L. -lft
-	./$@
-
 clean:
-	rm -rf $(OBJ_FILES) $(TEST_EXE)
+	rm -rf $(OBJ_FILES)
 
 fclean: clean
 	rm -rf $(TARGET)
