@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 15:30:39 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/16 15:39:09 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ int             ft_strncmp(const char *s1, const char *s2, unsigned int n);
 
 char            *ft_strnstr(const char *s1, const char *s2, unsigned int n);
 
+char            *ft_strdup(const char *s1);
+
 void            ft_bzero(void *str, unsigned int n);
 
 void            *ft_memset(void *str, int c, unsigned int n);
@@ -61,6 +63,6 @@ int             ft_tolower(int c);
 
 int             ft_atoi(const char *str);
 
-void            *ft_calloc(unsigned int count, unsigned int size);
+void            *ft_calloc(long unsigned int count, long unsigned int size);
 
 #endif

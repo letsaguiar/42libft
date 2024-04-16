@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 15:16:37 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 15:18:43by letsaguiar       ###   ########.fr       */
+/*   Created: 2024/04/16 15:31:52 by letsaguiar        #+#    #+#             */
+/*   Updated: 2024/04/16 15:54:30 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdint.h>
 #include "libft.h"
 
-void *ft_calloc(long unsigned int count, long unsigned int size)
+char    *ft_strdup(const char *src)
 {
-    unsigned char *ptr;
-    
-    if (count > SIZE_MAX / size)
-        return (NULL);
-    ptr = malloc(count * size);
-    if (!ptr)
-        return (NULL);
-    ft_bzero(ptr, count * size);
-    return (ptr);
+    unsigned int    length;
+    char            *dest;
+
+    length = ft_strlen(src);
+    dest = (char *) ft_calloc(length + 1, sizeof (char));
+    if (!dest)
+        return (0);
+    ft_strlcpy(dest, src, length + 1);
+    return (dest);
 }
