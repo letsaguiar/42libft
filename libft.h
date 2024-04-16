@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 15:39:09 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/16 19:06:14 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,7 @@ int             ft_tolower(int c);
 int             ft_atoi(const char *str);
 
 void            *ft_calloc(long unsigned int count, long unsigned int size);
+
+char            *ft_substr(const char *str, unsigned int start, unsigned int len);
 
 #endif
