@@ -6,11 +6,13 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 08:54:08 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 09:20:06 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/17 10:33:12 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memmove(void *dest, const void *src, unsigned int n)
+#include "libft.h"
+
+void *ft_memmove(void *dest, const void *src, size_t n)
 {
    char *cdest;
    char *csrc;

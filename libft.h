@@ -6,12 +6,13 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 19:06:14 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/17 10:29:16 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdlib.h>
 
 int             ft_islower(int c);
 
@@ -29,33 +30,33 @@ int				ft_isprint(int c);
 
 int             ft_isspace(int c);
 
-unsigned int    ft_strlen(const char *str);
+size_t          ft_strlen(const char *str);
 
-unsigned int    ft_strlcpy(char *dest, const char *src, unsigned int n);
+size_t          ft_strlcpy(char *dest, const char *src, size_t n);
 
-unsigned int    ft_strlcat(char *dest, const char *src, unsigned int n);
+size_t          ft_strlcat(char *dest, const char *src, size_t n);
 
 char            *ft_strchr(const char *str, int c);
 
 char            *ft_strrchr(const char *str, int c);
 
-int             ft_strncmp(const char *s1, const char *s2, unsigned int n);
+int             ft_strncmp(const char *s1, const char *s2, size_t n);
 
-char            *ft_strnstr(const char *s1, const char *s2, unsigned int n);
+char            *ft_strnstr(const char *s1, const char *s2, size_t n);
 
 char            *ft_strdup(const char *s1);
 
-void            ft_bzero(void *str, unsigned int n);
+void            ft_bzero(void *str, size_t n);
 
-void            *ft_memset(void *str, int c, unsigned int n);
+void            *ft_memset(void *str, int c, size_t n);
 
-void            *ft_memcpy(void *dest, const void *src, unsigned int n);
+void            *ft_memcpy(void *dest, const void *src, size_t n);
 
-void            *ft_memmove(void *dest, const void *src, unsigned int n);
+void            *ft_memmove(void *dest, const void *src, size_t n);
 
-void            *ft_memchr(void *str, int c, unsigned int n);
+void            *ft_memchr(void *str, int c, size_t n);
 
-int             ft_memcmp(const void *s1, const void *s2, unsigned int n);
+int             ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int             ft_toupper(int c);
 
@@ -63,8 +64,8 @@ int             ft_tolower(int c);
 
 int             ft_atoi(const char *str);
 
-void            *ft_calloc(long unsigned int count, long unsigned int size);
+void            *ft_calloc(size_t count, size_t size);
 
-char            *ft_substr(const char *str, unsigned int start, unsigned int len);
+char            *ft_substr(const char *str, size_t start, size_t len);
 
 #endif

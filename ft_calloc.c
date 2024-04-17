@@ -10,11 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <stdint.h>
 #include "libft.h"
 
-void *ft_calloc(long unsigned int count, long unsigned int size)
+void *ft_calloc(size_t count, size_t size)
 {
     unsigned char *ptr;
     

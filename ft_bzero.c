@@ -6,13 +6,13 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 08:44:40 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 08:45:10 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/17 10:20:28 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *str, unsigned int n)
+void    ft_bzero(void *str, size_t n)
 {
     ft_memset(str, 0, n);
 }

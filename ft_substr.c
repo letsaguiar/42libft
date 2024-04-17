@@ -6,14 +6,13 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:06:22 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/16 19:44:17 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/17 10:29:34 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char            *ft_substr(const char *str, unsigned int start, unsigned int len)
+char    *ft_substr(const char *str, size_t start, size_t len)
 {
     char            *ptr;
     
