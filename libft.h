@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/17 10:29:16 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/17 10:38:30 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,7 @@ int             ft_atoi(const char *str);
 void            *ft_calloc(size_t count, size_t size);
 
 char            *ft_substr(const char *str, size_t start, size_t len);
+
+char            *ft_strjoin(const char *s1, const char *s2);
 
 #endif

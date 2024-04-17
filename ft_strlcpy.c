@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 10:02:20 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/17 10:17:48 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/17 10:51:44 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t  ft_strlcpy(char *dest, const char *src, size_t n)
     size_t  src_len;
 
     src_len = ft_strlen(src);
-    if (src_len + 1 < n)
+    if (src_len + 1 <= n)
         ft_memcpy(dest, src, src_len + 1);
     else if (n > 0)
     {
