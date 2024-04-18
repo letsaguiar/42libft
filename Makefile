@@ -30,7 +30,8 @@ SRC_FILES := \
 	ft_atoi.c \
 	ft_calloc.c \
 	ft_substr.c \
-	ft_strjoin.c
+	ft_strjoin.c \
+	ft_strtrim.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
