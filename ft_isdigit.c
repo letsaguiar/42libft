@@ -1,31 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/21 09:33:32 by letsaguiar       ###   ########.fr       */
+/*   Created: 2024/04/21 09:26:52 by letsaguiar        #+#    #+#             */
+/*   Updated: 2024/04/21 09:27:15 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdlib.h>
-
-int	ft_isupper(int c);
-
-int	ft_islower(int c);
-
-int	ft_isalpha(int c);
-
-int	ft_isdigit(int c);
-
-int	ft_isalnum(int c);
-
-int	ft_isascii(int c);
-
-int	ft_isprint(int c);
-
-#endif
+int	ft_isdigit(int c)
+{
+	return (c >= '0' && c <= '9');
+}

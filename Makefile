@@ -2,7 +2,14 @@ CC := cc
 CFLAGS := -Wall -Wextra -Werror
 
 SRC_HEADERS := src
-SRC_FILES :=
+SRC_FILES := \
+	ft_isupper.c \
+	ft_islower.c \
+	ft_isalpha.c \
+	ft_isdigit.c \
+	ft_isalnum.c \
+	ft_isascii.c \
+	ft_isprint.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
