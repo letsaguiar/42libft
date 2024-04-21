@@ -20,7 +20,9 @@ SRC_FILES := \
 	ft_bzero.c \
 	ft_memset.c \
 	ft_memcpy.c \
-	ft_memmove.c
+	ft_memmove.c \
+	ft_toupper.c \
+	ft_tolower.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
