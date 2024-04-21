@@ -18,11 +18,13 @@ SRC_FILES := \
 	ft_strncat.c \
 	ft_strlcat.c \
 	ft_strchr.c \
+	ft_strrchr.c \
 	ft_bzero.c \
 	ft_memset.c \
 	ft_memcpy.c \
 	ft_memmove.c \
 	ft_memchr.c \
+	ft_memrchr.c \
 	ft_toupper.c \
 	ft_tolower.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
