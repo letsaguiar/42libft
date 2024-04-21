@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/21 09:47:26 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/21 09:52:00 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ void	*ft_bzero(void *s, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 
 void	*ft_memcpy(void *dst, const void *src, size_t len);
+
+void	*ft_memmove(void *dst, const void *src, size_t len);
 
 #endif
