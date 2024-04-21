@@ -9,7 +9,8 @@ SRC_FILES := \
 	ft_isdigit.c \
 	ft_isalnum.c \
 	ft_isascii.c \
-	ft_isprint.c
+	ft_isprint.c \
+	ft_strlen.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
