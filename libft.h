@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/21 11:34:02 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/21 11:38:02 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ char	*ft_strcat(char *dst, const char *src);
 char	*ft_strncat(char *dst, const char *src, size_t len);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t len);
+
+char	*ft_strchr(const char *s, int c);
 
 void	*ft_bzero(void *s, size_t len);
 
