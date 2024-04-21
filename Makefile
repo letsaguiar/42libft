@@ -11,7 +11,12 @@ SRC_FILES := \
 	ft_isascii.c \
 	ft_isprint.c \
 	ft_strlen.c \
+	ft_strcpy.c \
+	ft_strncpy.c \
 	ft_strlcpy.c \
+	ft_strcat.c \
+	ft_strncat.c \
+	ft_strlcat.c \
 	ft_bzero.c \
 	ft_memset.c \
 	ft_memcpy.c \
