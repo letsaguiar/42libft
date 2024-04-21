@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/21 11:44:20 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/21 12:02:47 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,10 @@ char	*ft_strchr(const char *s, int c);
 
 char	*ft_strrchr(const char *s, int c);
 
+int		ft_strcmp(const char *s1, const char *s2);
+
+int		ft_strncmp(const char *s1, const char *s2, size_t len);
+
 void	*ft_bzero(void *s, size_t len);
 
 void	*ft_memset(void *b, int c, size_t len);
@@ -57,6 +61,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t len);
 
 void	*ft_memrchr(const void *s, int c, size_t len);
+
+int		ft_memcmp(const void *s1, const void *s2, size_t len);
 
 int		ft_toupper(int c);
 
