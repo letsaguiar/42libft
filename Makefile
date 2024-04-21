@@ -21,6 +21,7 @@ SRC_FILES := \
 	ft_strrchr.c \
 	ft_strcmp.c \
 	ft_strncmp.c \
+	ft_strnstr.c \
 	ft_bzero.c \
 	ft_memset.c \
 	ft_memcpy.c \

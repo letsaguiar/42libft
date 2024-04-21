@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/21 12:02:47 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/21 12:07:08 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strcmp(const char *s1, const char *s2);
 
 int		ft_strncmp(const char *s1, const char *s2, size_t len);
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 void	*ft_bzero(void *s, size_t len);
 
