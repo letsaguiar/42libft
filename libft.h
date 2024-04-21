@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/21 09:44:55 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/21 09:47:26 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ size_t	ft_strlen(const char *s);
 void	*ft_bzero(void *s, size_t len);
 
 void	*ft_memset(void *b, int c, size_t len);
+
+void	*ft_memcpy(void *dst, const void *src, size_t len);
 
 #endif
