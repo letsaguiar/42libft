@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/21 21:02:02 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/22 13:16:38 by letsaguiar       ###   ########.fr       */
+/*   Created: 2024/04/22 13:12:32 by letsaguiar        #+#    #+#             */
+/*   Updated: 2024/04/22 13:22:17 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+char    *ft_strdup(const char *s)
 {
-	void	*ptr;
+    size_t  s_len;
+    char    *ptr;
 
-	if (count > SIZE_MAX / size)
-		return (NULL);
-	ptr = malloc(count * size);
-	if (!ptr)
-		return (NULL);
-	ft_bzero(ptr, count * size);
-	return (ptr);
+    if (!s || ft_strlen(s) == 0)
+        return ft_calloc(1, sizeof (char));
+    s_len = ft_strlen(s);
+    ptr = (char *) malloc((s_len + 1) * sizeof (char));
+    if (!ptr)
+        return (NULL);
+    ft_strlcpy(ptr, s, s_len + 1);
+    return (ptr);
 }
