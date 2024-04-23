@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:59:39 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/23 14:21:27 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/23 14:25:17 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,7 @@ static void free_everything(char **arr, size_t len)
     i = 0;
     while (i < len)
     {
-        if (arr[i])
-            free(arr[i]);
+        free(arr[i]);
         i++;
     }
     free(arr);
