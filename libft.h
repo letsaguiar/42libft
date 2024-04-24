@@ -6,13 +6,14 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/24 14:14:04 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/24 14:29:29 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_isupper(int c);
 
@@ -91,5 +92,13 @@ int		ft_atoi(const char *s);
 char    *ft_itoa(int c);
 
 void	*ft_calloc(size_t count, size_t size);
+
+void    ft_putchar_fd(char c, int fd);
+
+void    ft_putstr_fd(const char *s, int fd);
+
+void    ft_putendl_fd(const char *s, int fd);
+
+void    ft_putnbr_fd(int n, int fd);
 
 #endif

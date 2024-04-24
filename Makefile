@@ -41,7 +41,11 @@ SRC_FILES := \
 	ft_tolower.c \
 	ft_atoi.c \
 	ft_itoa.c \
-	ft_calloc.c
+	ft_calloc.c \
+	ft_putchar_fd.c \
+	ft_putstr_fd.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 TARGET := libft.a
