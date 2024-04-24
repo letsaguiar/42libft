@@ -38,6 +38,7 @@ SRC_FILES := \
 	ft_toupper.c \
 	ft_tolower.c \
 	ft_atoi.c \
+	ft_itoa.c \
 	ft_calloc.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
