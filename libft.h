@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/24 14:08:22 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/24 14:14:04 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ char    *ft_strjoin(const char *s1, const char *s2);
 char    *ft_strtrim(const char *s, const char *set);
 
 char    *ft_strmapi(const char *s, char (*f)(unsigned int, char));
+
+void    ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 char    **ft_split(const char *s, char c);
 

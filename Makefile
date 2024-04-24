@@ -28,6 +28,7 @@ SRC_FILES := \
 	ft_strjoin.c \
 	ft_strtrim.c \
 	ft_strmapi.c \
+	ft_striteri.c \
 	ft_split.c \
 	ft_bzero.c \
 	ft_memset.c \
