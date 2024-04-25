@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 14:22:34 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/24 18:36:14 by letsaguiar       ###   ########.fr       */
+/*   Created: 2024/04/24 16:37:54 by letsaguiar        #+#    #+#             */
+/*   Updated: 2024/04/24 18:21:19 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putstr_fd(const char *s, int fd)
+size_t  ft_putunbr(unsigned int n)
 {
-    if (!s)
-        write(fd, "(null)", 6);
-    else
-        write(fd, s, ft_strlen(s));
+    size_t  len;
+
+    if (n > 9)
+        ft_putunbr(n / 10);
+    ft_putchar_fd((n % 10) + 48, 1);
+    if (n == 0)
+        return (1);
+    len = 0;
+    while (n != 0)
+    {
+        len++;
+        n /= 10;
+    }
+    return (len);
 }

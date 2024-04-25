@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/24 14:29:29 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/04/24 21:30:19 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 int		ft_isupper(int c);
 
@@ -95,10 +96,24 @@ void	*ft_calloc(size_t count, size_t size);
 
 void    ft_putchar_fd(char c, int fd);
 
+size_t  ft_putchar(char c);
+
 void    ft_putstr_fd(const char *s, int fd);
+
+size_t  ft_putstr(const char *s);
 
 void    ft_putendl_fd(const char *s, int fd);
 
 void    ft_putnbr_fd(int n, int fd);
+
+size_t  ft_putnbr(int n);
+
+size_t  ft_putunbr(unsigned int n);
+
+size_t  ft_puthex_lower(long unsigned int n);
+
+size_t  ft_puthex_upper(long unsigned int n);
+
+size_t  ft_putaddr(void *ptr);
 
 #endif

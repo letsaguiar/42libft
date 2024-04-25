@@ -1,21 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_puthex_upper.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 14:22:34 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/24 18:36:14 by letsaguiar       ###   ########.fr       */
+/*   Created: 2024/04/24 16:43:41 by letsaguiar        #+#    #+#             */
+/*   Updated: 2024/04/24 21:30:08 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putstr_fd(const char *s, int fd)
+size_t  ft_puthex_upper(long unsigned int n)
 {
-    if (!s)
-        write(fd, "(null)", 6);
+    size_t  len;
+
+    if (n >= 16)
+        ft_puthex_upper(n / 16);
+    if (n % 16 <= 9)
+        ft_putchar_fd(n % 16 + 48, 1);
     else
-        write(fd, s, ft_strlen(s));
+        ft_putchar_fd(n % 16 + 55, 1);
+    if (n == 0)
+        return (1);
+    len = 0;
+    while (n != 0)
+    {
+        len++;
+        n /= 16;
+    }
+    return (len); 
 }
