@@ -15,10 +15,6 @@
 size_t  ft_putaddr(void *ptr)
 {
     if (ptr == NULL)
-    {
-        ft_putstr("(nil)");
-        return (5);
-    }
-    ft_putstr("0x");
-    return (ft_puthex_lower((long unsigned int) ptr) + 2);
+        return (ft_putstr("(nil)"));
+    return (ft_putstr("0x") + ft_puthex_lower((size_t) ptr));
 }
