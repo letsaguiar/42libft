@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 16:33:27 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/05/03 16:52:36 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/05/04 08:15:41 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t ft_putnbr(int n)
         return (ft_putstr("-2147483648"));
     if (n < 0)
     {
-        len += ft_putchar("-");
+        len += ft_putchar('-');
         n *= -1;
     }
     if (n > 9)
