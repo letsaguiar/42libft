@@ -6,7 +6,7 @@
 /*   By: letsaguiar <letsaguiar@yandex.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 21:55:31 by letsaguiar        #+#    #+#             */
-/*   Updated: 2024/04/24 21:30:19 by letsaguiar       ###   ########.fr       */
+/*   Updated: 2024/05/06 14:47:13 by letsaguiar       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,5 +115,7 @@ size_t  ft_puthex_lower(long unsigned int n);
 size_t  ft_puthex_upper(long unsigned int n);
 
 size_t  ft_putaddr(void *ptr);
+
+int     ft_printf(const char *s, ...);
 
 #endif
