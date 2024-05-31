@@ -12,8 +12,14 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1024
+# endif
+
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 # include <stdarg.h>
 
 int		ft_isupper(int c);
@@ -117,5 +123,7 @@ size_t  ft_puthex_upper(long unsigned int n);
 size_t  ft_putaddr(void *ptr);
 
 int     ft_printf(const char *s, ...);
+
+char    *get_next_line(int fd);
 
 #endif
