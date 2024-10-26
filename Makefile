@@ -1,8 +1,8 @@
 CC := gcc
-CFLAGS := -Wall -Wextra - Werror
+CFLAGS := -Wall -Wextra -Werror
 
 SRC_FILES := \
-
+	ft_isalpha.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 NAME := libft.a
