@@ -19,6 +19,7 @@ SRC_FILES := \
 	ft_toupper.c \
 	ft_tolower.c \
 	ft_strchr.c \
+	ft_strrchr.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
