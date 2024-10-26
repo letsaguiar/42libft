@@ -2,6 +2,8 @@ CC := gcc
 CFLAGS := -Wall -Wextra -Werror
 
 SRC_FILES := \
+	ft_isupper.c \
+	ft_islower.c \
 	ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
@@ -14,6 +16,8 @@ SRC_FILES := \
 	ft_memmove.c \
 	ft_strlcpy.c \
 	ft_strlcat.c \
+	ft_toupper.c \
+	ft_tolower.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
