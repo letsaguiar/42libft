@@ -1,6 +1,5 @@
 CC := gcc
 CFLAGS := -Wall -Wextra - Werror
-CINCLUDE := -Iinclude
 
 SRC_FILES := \
 
@@ -17,11 +16,12 @@ $(NAME): $(OBJ_FILES)
 	ar rcs $(NAME) $(OBJ_FILES)
 
 %.o: %.c
-	$(CC) $(CFLAGS) $(CINCLUDE) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ_FILES)
 
 fclean: clean
+	rm -f $(NAME)
 
 re: fclean all
