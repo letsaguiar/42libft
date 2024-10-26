@@ -13,6 +13,7 @@ SRC_FILES := \
 	ft_memcpy.c \
 	ft_memmove.c \
 	ft_strlcpy.c \
+	ft_strlcat.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
