@@ -8,6 +8,7 @@ SRC_FILES := \
 	ft_isascii.c \
 	ft_isprint.c \
 	ft_strlen.c \
+	ft_memset.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
