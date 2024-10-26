@@ -4,6 +4,7 @@ CFLAGS := -Wall -Wextra -Werror
 SRC_FILES := \
 	ft_isalpha.c \
 	ft_isdigit.c \
+	ft_isalnum.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
