@@ -22,6 +22,7 @@ SRC_FILES := \
 	ft_strrchr.c \
 	ft_strncmp.c \
 	ft_memchr.c \
+	ft_memcmp.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
