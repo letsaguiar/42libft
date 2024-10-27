@@ -69,4 +69,6 @@ char    *ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
 void    ft_striteri(const char *s, void (*f)(unsigned int, char *));
 
+void    ft_putchar_fd(char c, int fd);
+
 #endif
