@@ -53,4 +53,6 @@ int     ft_atoi(const char *s);
 
 void    *ft_calloc(size_t n, size_t size);
 
+char    *ft_strdup(const char *s);
+
 #endif

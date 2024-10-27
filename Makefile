@@ -27,6 +27,7 @@ SRC_FILES := \
 	ft_strnstr.c \
 	ft_atoi.c \
 	ft_calloc.c \
+	ft_strdup.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
