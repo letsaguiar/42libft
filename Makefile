@@ -32,6 +32,7 @@ SRC_FILES := \
 	ft_strjoin.c \
 	ft_strtrim.c \
 	ft_split.c \
+	ft_itoa.c \
 
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 

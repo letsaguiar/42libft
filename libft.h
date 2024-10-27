@@ -63,4 +63,6 @@ char    *ft_strtrim(const char *s, const char *set);
 
 char    **ft_split(const char *s, char c);
 
+char    *ft_itoa(int n);
+
 #endif
