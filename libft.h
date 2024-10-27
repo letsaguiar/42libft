@@ -55,4 +55,6 @@ void    *ft_calloc(size_t n, size_t size);
 
 char    *ft_strdup(const char *s);
 
+char    *ft_substr(const char *s, size_t start, size_t len);
+
 #endif
