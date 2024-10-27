@@ -57,4 +57,6 @@ char    *ft_strdup(const char *s);
 
 char    *ft_substr(const char *s, size_t start, size_t len);
 
+char    *ft_strjoin(const char *s1, const char *s2);
+
 #endif
