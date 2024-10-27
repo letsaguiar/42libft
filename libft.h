@@ -61,4 +61,6 @@ char    *ft_strjoin(const char *s1, const char *s2);
 
 char    *ft_strtrim(const char *s, const char *set);
 
+char    **ft_split(const char *s, char c);
+
 #endif
