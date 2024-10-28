@@ -91,4 +91,6 @@ size_t  ft_lstsize(t_list *list);
 
 t_list  *ft_lstlast(t_list *list);
 
+void    ft_lstadd_back(t_list **list, t_list *new);
+
 #endif
