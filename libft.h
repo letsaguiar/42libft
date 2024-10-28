@@ -87,4 +87,6 @@ t_list  *ft_lstnew(void *content);
 
 void    ft_lstadd_front(t_list **list, t_list *new);
 
+size_t  ft_lstsize(t_list *list);
+
 #endif

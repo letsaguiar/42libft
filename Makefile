@@ -44,6 +44,7 @@ OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 BONUS_FILES := \
 	ft_lstnew.c \
 	ft_lstadd_front.c \
+	ft_lstsize.c \
 
 BONUS_OBJ_FILES := $(subst .c,.o,$(BONUS_FILES))
 
