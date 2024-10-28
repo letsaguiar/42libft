@@ -85,5 +85,6 @@ typedef struct s_list
 
 t_list  *ft_lstnew(void *content);
 
+void    ft_lstadd_front(t_list **list, t_list *new);
 
 #endif
