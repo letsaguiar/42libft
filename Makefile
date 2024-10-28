@@ -38,9 +38,12 @@ SRC_FILES := \
 	ft_putchar_fd.c \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
-	ft_putnbr_fd.c \
-
+	ft_putnbr_fd.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
+
+BONUS_FILES := \
+	ft_lstnew.c
+BONUS_OBJ_FILES := $(subst .c,.o,$(BONUS_FILES))
 
 NAME := libft.a
 
@@ -48,9 +51,11 @@ NAME := libft.a
 
 all: $(NAME)
 
-
 $(NAME): $(OBJ_FILES)
 	ar rcs $(NAME) $(OBJ_FILES)
+
+bonus: $(OBJ_FILES) $(BONUS_OBJ_FILES)
+	ar rcs $(NAME) $(OBJ_FILES) $(BONUS_OBJ_FILES)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
