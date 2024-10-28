@@ -47,6 +47,7 @@ BONUS_FILES := \
 	ft_lstsize.c \
 	ft_lstlast.c \
 	ft_lstadd_back.c \
+	ft_lstdelone.c \
 
 BONUS_OBJ_FILES := $(subst .c,.o,$(BONUS_FILES))
 

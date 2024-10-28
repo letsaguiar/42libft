@@ -93,4 +93,6 @@ t_list  *ft_lstlast(t_list *list);
 
 void    ft_lstadd_back(t_list **list, t_list *new);
 
+void    ft_lstdelone(t_list *list, void (*del)(void *));
+
 #endif
