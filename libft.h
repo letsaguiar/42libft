@@ -101,4 +101,6 @@ void    ft_lstiter(t_list *list, void (*f)(void *));
 
 t_list  *ft_lstmap(t_list *list, void *(*f)(void *), void (*del)(void *));
 
+char    *ft_itoa_base(long long n, int base, char *digits);
+
 #endif
