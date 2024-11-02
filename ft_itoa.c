@@ -1,34 +1,14 @@
 #include "libft.h"
 #include <limits.h>
 
-char    *ft_itoa(int n)
+char    *ft_itoa(t_number n)
 {
-    char    *str;
-    int     len;
-    int     sign;
-    int     tmp;
+    if (n > 0)
+        return (ft_itoa_base(n, 10, "0123456789"));
+    
+    t_string s1 = ft_itoa_base(-n, 10, "0123456789");
+    t_string s2 = ft_strjoin("-", s1);
 
-    len = 1;
-    sign = 0;
-    if (n < 0)
-    {
-        sign = 1;
-        len++;
-    }
-    tmp = n;
-    while (tmp /= 10)
-        len++;
-    if (n == INT_MIN)
-        return (ft_strdup("-2147483648"));
-    if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
-        return (NULL);
-    str[len] = '\0';
-    if (sign)
-        str[0] = '-';
-    while (len-- > sign)
-    {
-        str[len] = (n % 10) * (sign ? -1 : 1) + '0';
-        n /= 10;
-    }
-    return (str);
+    free(s1);
+    return (s2);
 }

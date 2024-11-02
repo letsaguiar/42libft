@@ -3,6 +3,15 @@
 
 # include <stdlib.h>
 
+
+typedef int t_bool;
+# define TRUE 1
+# define FALSE 0
+
+typedef char* t_string;
+
+typedef long long t_number;
+
 int     ft_isblank(int c);
 
 int     ft_isupper(int c);
@@ -63,7 +72,7 @@ char    *ft_strtrim(const char *s, const char *set);
 
 char    **ft_split(const char *s, char c);
 
-char    *ft_itoa(int n);
+char    *ft_itoa(t_number n);
 
 char    *ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
@@ -101,6 +110,6 @@ void    ft_lstiter(t_list *list, void (*f)(void *));
 
 t_list  *ft_lstmap(t_list *list, void *(*f)(void *), void (*del)(void *));
 
-char    *ft_itoa_base(long long n, int base, char *digits);
+char    *ft_itoa_base(t_number n, int base, char *digits);
 
 #endif

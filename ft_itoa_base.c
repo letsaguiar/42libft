@@ -1,7 +1,10 @@
 #include "libft.h"
 
-char    *ft_itoa_base(long long n, int base, char *digits)
+char    *ft_itoa_base(t_number n, int base, char *digits)
 {
+    if (n < 0)
+        return (NULL);
+
     size_t      len;
     long long   tmp;
     char        *str;
