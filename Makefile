@@ -39,7 +39,8 @@ SRC_FILES := \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
-	ft_itoa_base.c
+	ft_itoa_base.c \
+	ft_throw.c
 OBJ_FILES := $(subst .c,.o,$(SRC_FILES))
 
 BONUS_FILES := \

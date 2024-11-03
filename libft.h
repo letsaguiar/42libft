@@ -112,4 +112,6 @@ t_list  *ft_lstmap(t_list *list, void *(*f)(void *), void (*del)(void *));
 
 char    *ft_itoa_base(t_number n, int base, char *digits);
 
+void    ft_throw(const char *msg);
+
 #endif
